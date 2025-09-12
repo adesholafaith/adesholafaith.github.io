@@ -966,6 +966,7 @@ footer p {
 
   nav {
     width: 60%;
+    margin-top: 8%;
   }
 
   nav ul {
@@ -1029,6 +1030,10 @@ nav ul li:last-child {
     width: 60%;
   }
 
+  .home-section {
+    margin-top: 0;
+  }
+
   .home-text button {
     width: 35%;
     font-size: 0.9rem;
@@ -1051,19 +1056,23 @@ nav ul li:last-child {
   }
 
   .skills-icons ul li {
-        margin: 0.1rem;
+        margin: 0.4rem;
     }
 
   .projects {
     margin-top: 10%;
   }
 
+  .services {
+    margin-top: 0;
+  }
+    
   .my-services p {
     font-size: 1rem;
   }
 
   .card {
-    width: 75%;
+    width: 100%;
   }
 
   .card-list {
@@ -1073,6 +1082,7 @@ nav ul li:last-child {
   .card-list li {
     padding: .5rem;
     padding-left: 25px;
+    margin-bottom: 8px;
   }
 
   .scroll-btn img {
@@ -1095,7 +1105,6 @@ nav ul li:last-child {
   .contact {
     margin: 0 4rem;
     padding: 0;
-    padding-top: 2rem;
   }
 
   .book img {
@@ -1334,5 +1343,6 @@ nav ul li:last-child {
   .desktop-img {
     display: none;
   }
+
 
 }
