@@ -866,6 +866,7 @@ nav ul li:last-child {
   }
 
   .about {
+      padding: 0;
     padding-bottom: 2rem;
   }
 
@@ -875,7 +876,7 @@ nav ul li:last-child {
 
   .about-text {
     margin-top: 0;
-    padding: 0 1rem;
+    padding: 0;
     font-size: 0.9rem;
     margin-left: 0;
   }
@@ -899,6 +900,10 @@ nav ul li:last-child {
   .project-container {
     grid-template-columns: 1fr;
   }
+
+    .project-card {
+        height: 40vh;
+    }
 
   .contact {
     margin: 0 3rem;
@@ -968,3 +973,4 @@ nav ul li:last-child {
     display: none; 
   }
 } 
+
