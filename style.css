@@ -17,7 +17,6 @@ body {
     font-family: "Oswald", sans-serif;
     overflow-x: hidden;
     box-sizing: border-box;
-    /* font-family: "Lato", sans-serif; */
     font-weight: 400;
     line-height: 1.7;
     color: #777;
@@ -28,6 +27,10 @@ img {
   height: auto;
   display: block;
 } 
+
+button {
+  cursor: pointer;
+}
  
 .cursor-ball {
       position: fixed;
@@ -102,7 +105,7 @@ nav ul li a {
     justify-content: center;
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(to right, #ddd, #776f6f, #ddd) 1;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 .imageset {
@@ -203,9 +206,10 @@ nav ul li a {
 
 
 .about {
-    margin: 4% auto;
-    margin-bottom: 0;
-    padding: 0 7rem;
+    margin: 2rem 7rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, #ddd, #776f6f, #ddd) 1;
 }
 
 .about-me {
@@ -214,15 +218,10 @@ nav ul li a {
     justify-content: center;
     gap: 3rem;
     align-items: center;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, #ddd, #776f6f, #ddd) 1;
-    padding-bottom: 3rem;
 }
 
 .about-text  {
-    /* margin-left: 2rem; */
     line-height: 1.7rem;
-    /* padding-right: 5rem; */
     font-family: "Fira Sans", sans-serif;
     color: #5c5a5a;
     font-weight: 400;
@@ -230,55 +229,74 @@ nav ul li a {
 }
 
 .about-me h3 {
-  margin-top: .5rem;
-    padding: 2rem;
-    font-size: 2rem;
+    padding-top: 2rem;
+    font-size: 1.9rem;
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     color: #513366;
 }
 
 .about-image {
-    width: 26%;
+    width: 25%;
     border-radius: 10%;
-    /* width: 20rem;
-    margin: 4% 3%;
-    margin-right: 2%; */
-}
-
-.skills-icons {
-    margin-left: 1rem;
-}
-
-.skills-icons ul {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-}
-
-.skills-icons ul li {
-    list-style: none;
-    display: inline;
-    margin-left: -1.4rem;
-}
-
-.skills-icons ul li img {
-    height: 2rem;
-    width: 2rem;
 }
 
 .services {
-  position: relative;
-    padding: 3rem 7rem;
+    width: 60%;
+    padding-left: 7rem;
 }
 
-.my-services {
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, #ddd, #776f6f, #ddd) 1;
-    padding-bottom: 3rem;
+.services h3 {
+  padding-bottom: .5rem;
+  font-weight: 500;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #513366;
 }
 
-.about h2, .my-services h2, .projects h2, .contact h2, .tools h2 {
+.services h4 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.service-items {
+  border-bottom: .5px solid #FD7E14;
+}
+
+.service-list {
+  padding-bottom: .3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-list img {
+  width: 40px;
+  height: 35px;
+}
+
+.service-content {
+  margin-top: 6px;
+  display: none;
+  color: #555;
+  list-style: none;
+}
+
+.service-content li {
+ display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.service-content img {
+  width: 20px;
+}
+
+.about h2, .projects h2, .contact h2, .tools h2 {
     padding-bottom: 1rem;
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
@@ -286,115 +304,6 @@ nav ul li a {
     color: #513366;
     text-align: center;
 }
-
-.my-services p {
-    color: #5c5a5a;
-    text-align: center;
-    font-size: 1.2rem;
-    font-family: "Fira Sans", sans-serif;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    align-items: stretch;
-    margin-top: 5%;
-    margin-bottom: 3%;
-}
-
-.card {
-    perspective: 1000px;
-    width: 17rem;
-    min-height: 310px;
-    cursor: pointer;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    text-align: center;
-    color: #5c5a5a;
-    backface-visibility: hidden;
-    overflow: hidden;
-    transform-style: preserve-3d;
-    transition: transform 10s ease;
-}
-
-.card-side {
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.card-side-front img {
-    width: 50px;
-    height: 50px;
-    margin: 1% auto;
-}
-
-.card-side-front h2 {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    transform: scaleY(1.5);
-    font-size: 17px;
-    letter-spacing: 1px;
-    margin-top: 15px;
-}
-
-.card-side-front {
-    align-items: center;
-    padding-top: 6rem;
-}
-
-.card-side--back {
-  transform: rotateY(180deg);
-  padding-top: 1.8rem;
-}
-
-.card-side--back h2 {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    font-size: 24px;
-    letter-spacing: 1px;    
-}
-
-body.-mode .card-side--back h2 {
-    color: #fff;
-}
-
-.card-side-front, .card-side--back {
-    position: absolute;
-    backface-visibility: hidden;
-    box-sizing: border-box;   
-}
-
-.card:hover .card-side-front {
-    transform: rotateY(-180deg);
-}
-
-.card:hover .card-side--back {
-  transform: rotateY(0);
-}
-
-.card-list {
-    text-align: center;
-    font-size: 12px;
-    list-style: none;
-    width: 80%;
-    margin: 0 auto;
-    font-family: "Fira Sans", sans-serif;
-}
-
-.card-list li {
-  text-align: start;
-  padding: .6rem;
-  background: url(./img/icons8-check-100.png) no-repeat left center;
-  background-size: 1rem;
-  padding-left: 25px;
-}
-
-.card-list li:not(:last-child) {
-  border-bottom: 1px solid #c7b8b8;
-}
-
 
 
 .projects {
@@ -411,18 +320,23 @@ body.-mode .card-side--back h2 {
 }
 
 .project-card {
-    border-radius: 10%;
+    border-radius: 5%;
     background: #161515;
     padding: 2.5rem;
     color: #fff;
-    height: 62vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform .5s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
 }
 
 .project-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -431,58 +345,15 @@ body.-mode .card-side--back h2 {
     font-family: "Fira Sans", sans-serif;
 }
 
+.pro-img {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .project-card img {
-    width: 8%;
-    margin-left: 17rem;
+    width: 30%;
 }
-
-.card-text {
-    padding: 0 10px
-}
-
-.card-text h3 {
-  margin: 2rem 0;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: #513366;
-}
-
-.card-text p {
-  font-family: "Fira Sans", sans-serif;
-  text-align: center;
-  line-height: 1.5rem;
-  color: #776f6f;
-}
-
-.card-button {
-    border-radius: 8rem;
-    background: none;
-    border: 1px solid #FD7E14;
-    font-family: "Oswald", sans-serif;
-    color: #FD7E14;
-    text-transform: uppercase;
-    font-weight: 600;
-    display: block;
-    margin: 2rem auto;
-    margin-top: 1rem;
-    padding: .7rem;
-    width: 11rem;
-    font-size: 1rem;
-    text-decoration: none;
-}
-
-.card-button:hover {
-    background: #FD7E14;
-    color: #fff;
-    font-weight: 100;
-}
-
-.card-button a {
-  text-decoration: none;
-  color: inherit;
-}
-
 
 .contact {
     margin: 0 7rem;
@@ -602,6 +473,7 @@ footer {
 
 .footer-icons {  
   margin-top: .8rem;
+  cursor: pointer;
 }
 
 .footer-icons ul {
@@ -638,7 +510,6 @@ footer p {
 
   .home-section,
   .about,
-  .services,
   .contact {
     padding: 0 3rem;
   }
@@ -651,6 +522,11 @@ footer p {
     margin-top: 7rem;
   }
 
+  .about {
+    margin: 1rem 3rem;
+    padding-bottom: 3rem;
+  }
+
   .about-me {
     margin-top: 1rem;
   }
@@ -659,41 +535,16 @@ footer p {
     margin-top: 1rem;
   }
 
-  .skills-icons ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-left: -4rem;
+  .about-image {
+    width: 35%;
   }
 
-  .skills-icons ul li {
-    margin: 0 0.5rem;
+  .services {
+    padding-left: 2.2rem;
   }
 
-  .my-services {
-    padding: 2rem;
-  }
-
-  .container {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card {
-    width: 32%;
-    margin-bottom: 2rem;
-  }
-
-  .card-button {
-    padding: .5rem;
-  }
-
-  .projects {
-    margin: 5% auto;
-  }
-
-  .project-card {
-    width: 280px;
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact h2 {
@@ -715,12 +566,7 @@ footer p {
     padding: 2rem;
   }
 
-  .contact {
-    padding-right: 0;
-  }
-
   .contact-btn {
-    margin: 1rem auto;
     padding: .5rem;
   }
 
@@ -771,7 +617,6 @@ footer p {
 
   .home-section,
   .about,
-  .services,
   .contact {
     padding: 0 3rem;
   }
@@ -832,83 +677,49 @@ footer p {
   }
 
   .about {
-    margin: 5% auto;
     margin-bottom: 0;
+    padding-bottom: 2rem;
   }
 
   .about-me {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
+    gap: 1rem;
   }
 
-  .about img {
+  .about-image {
     width: 45%;
     height: auto;
   }
 
   .about-text {
-    padding: 0 72px;
+    padding: 0 2rem;
     margin-left: 0;
     width: 100%;
   }
 
-  .skills-icons ul {
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 0;
-  }
-
-  .skills-icons ul li {
-    margin: 0.2rem;
-  }
-
   .services {
-    margin-top: 1rem;
+    padding-left: 0;
+    width: 80%;
+    margin: 1rem auto;
   }
 
-  .card {
-    width: 45%;
-    margin-bottom: 2rem;
-    min-height: 335px;
+  .services h3 {
+    text-align: center;
   }
 
-  .card-side--back h2 {
-    padding-bottom: 0;
-  }
-
-  .card-list {
-    font-size: 13px;
-  }
-
-  .card-list li {
-    margin-bottom: 0;
-  }
-
-  .projects {
-    margin-bottom: 7%;
-    margin-top: 5%;
+  .project-container {
+    margin: 0 3rem;
+    gap: 2rem;
   }
 
   .project-card {
-    width: 40%;
+    padding: 2rem;
   }
 
-  .scroll-btn {
-    padding: 2px 4px;
-  }
-
-  .left,
-  .right {
-    bottom: 19rem;
-  }
-
-  .card-text p {
-    font-size: .9rem;
-  }
-
-  .card-button {
-    padding: .5rem;
+  .project-card h3 {
+    font-size: 1.4rem;
   }
 
   .contact {
@@ -943,10 +754,6 @@ footer p {
 
   .contact {
     padding: 3rem;
-  }
-
-  .contact-btn {
-    margin-left: 10rem;
   }
 
   footer {
@@ -1022,6 +829,10 @@ nav ul li:last-child {
     width: 30px;
   }
 
+  .home-section, .about, .contact {
+    padding: 0 1rem;
+  }
+
   .home-text {
     margin-left: 0;
     line-height: 2.5rem;
@@ -1050,11 +861,15 @@ nav ul li:last-child {
     padding: 0.5rem;
   }
 
-  .about h2, .my-services h2, .projects h2, .contact h2, .tools h2 {
+  .about h2, .projects h2, .contact h2, .tools h2 {
     font-size: 2rem;
   }
 
-  .about img {
+  .about {
+    padding-bottom: 2rem;
+  }
+
+  .about-image {
     width: 70%;
   }
 
@@ -1069,85 +884,30 @@ nav ul li:last-child {
     font-size: 1.6rem;
   }
 
-  .skills-icons {
-    margin: 0;
+  .services {
+    width: 100%;
   }
 
-  .skills-icons ul {
-    gap: 0;
+  .services h4 {
+    font-size: 1.1rem;
   }
-
-  .skills-icons ul li img {
-    height: 1.5rem;
-    width: 1.5rem; 
-  }
-
-  .skills-icons ul li {
-    padding-right: 1rem;
-    }
 
   .projects {
     margin-top: 10%;
-  }
-
-  .services {
-    margin-top: 0;
-  }
-
-  .my-services p {
-    font-size: 1rem;
   }
 
   .project-container {
     grid-template-columns: 1fr;
   }
 
-  .card {
-    width: 85%;
-  }
-
-  .card-side-front h2 {
-    font-size: 1.3rem;
-  }
-
-  .card-side--back h2 {
-    font-size: 1.5rem;
-  }
-
-  .card-list {
-    font-size: 12.5px;
-  }
-  
-  .card-list li {
-    padding: .5rem;
-    padding-left: 25px;
-    margin-bottom: 8px;
-  }
-
-  .scroll-btn img {
-    width: 1.7rem;
-    height: 1.5rem;
-  }
-
-  .project-card {
-    width: 80%;
-  }
-
-  .card-text p {
-    font-size: .9rem;
-  }
-
-  .scroll-btn {
-    padding: 3px;
-  }
-
-  .card-button {
-    width: 9rem;
-  }
-
   .contact {
-    margin: 0 4rem;
-    padding: 0;
+    margin: 0 3rem;
+    padding: 1rem 0;
+  }
+
+  .book-form {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .book img {
@@ -1169,10 +929,9 @@ nav ul li:last-child {
   }
 
   .contact-btn {
-    width: 40%;
     font-size: 0.9rem;
     padding: 0.5rem;
-    margin: 1rem 6rem;
+    margin: 0;
   }
 
   footer {
@@ -1206,228 +965,6 @@ nav ul li:last-child {
   }
 
   .desktop-img {
-    display: none; /* Hide large desktop images */
+    display: none; 
   }
 } 
-
-
-@media (max-width: 375px) {
-  nav {
-    width: 50%;
-    padding: 0 1rem;
-    border: none;
-    margin-top: 10px;
-    margin-left: 3rem;
-  }
-
-  nav img {
-        width: 20px;
-        height: 11px;
-        margin-top: 1rem;
-  }
-
-  .nav-img {
-    display: none;
-  }
-
-  .my-svg {
-    display: none;
-  }
-
-  nav ul {
-    padding-left: 2rem;
-  }
-
-  nav ul li {
-    font-size: .65rem;
-    margin: 0;
-    margin-right: 3px;
-  }
-
-  .home-section {
-    margin-top: 0;
-  }
-
-  .imageset {
-    width: 76%;
-  }
-
-  .home img {
-    width: 10rem;
-  }
-
-  .home-text {
-    line-height: 2rem;
-  }
-
-  .home-text h1 {
-    font-size: 1.6rem;
-    letter-spacing: -.1rem;
-  }
-
-  .home-text h2 {
-    font-size: 1.4rem;
-  }
-
-  .home-text p {
-    font-size: .9rem;
-    padding: 0;
-  }
-
-  .wave-icon {
-        width: 25px;
-        height: 25px;
-        bottom: .5rem;
-    }
-
-  .wave-icon .hand {
-    width: 24px;
-  }
-
-  .wave-icon .hand {
-    width: 20px;
-  }
-
-  .home-icons img {
-    width: 12%;
-    height: auto;
-  }
-
-  .home-text button {
-    width: 40%;
-    font-size: 0.6rem;
-    padding: 0.4rem;
-  }
-
-  .about h2, .my-services h2, .projects h2, .contact h2, .tools h2 {
-    font-size: 1.6rem;
-  }
-
-  .about img {
-    width: 80%;
-    margin: 1rem auto;
-  }
-
-  .about-me {
-    padding-bottom: 1rem;
-  }
-
-  .about-me h3 {
-    font-size: 1.5rem;
-    margin-bottom: -1.5rem;
-    margin-top: 0;
-  }
-
-  .about-text {
-    font-size: 0.85rem;
-    padding: 0 1rem;
-    margin-left: 0;
-  }
-
-  .skills-icons ul {
-    gap: 0rem;
-  }
-
-  .skills-icons ul li {
-    margin: 0;
-    margin-left: 0.2rem;
-  }
-
-  .my-services {
-    padding-bottom: 1rem;
-  }
-
-  .my-services p {
-    font-size: .8rem;
-  }
-
-  .card {
-    width: 100%;
-    min-height: 285px;
-  }
-
-  .card-side-front h2,
-  .card-side--back h2 {
-    font-size: 1rem;
-  }
-
-  .card-side--back h2 {
-    padding-bottom: 0;
-  }
-
-  .card-list {
-    width: 90%;
-    font-size: 11px;
-    margin-top: .5rem;
-  }
-
-  .card-list li {
-    margin: 0;
-  }
-
-  .card-button {
-    font-size: 0.9rem;
-    width: 40%;
-    padding: 0.5rem;
-  }
-
-  .project-card {
-    width: 90%;
-  }
-
-  .card-text p {
-    font-size: .8rem;
-  }
-
-  .scroll-btn {
-    padding: 4px;
-  }
-
-  .book img {
-    width: 85%;
-    height: auto;
-  }
-
-  .form-input {
-    padding: 0.8rem 1rem;
-    font-size: 0.8rem;
-  }
-
-  .form-radius {
-    height: 6rem;
-  }
-
-  .form-label {
-    font-size: 0.85rem;
-  }
-
-  .contact-btn {
-    width: 50%;
-    font-size: 0.85rem;
-    padding: 0.5rem;
-    margin: 1rem 3rem;
-  }
-
-  footer {
-    padding: 1rem;
-    font-size: 0.8rem;
-  }
-
-  .footer-item {
-    display: block;
-    margin: 0.4rem 0;
-  }
-
-  .footer-text {
-    display: block;
-  }
-
-  .footer-icons ul li {
-    margin: 0.4rem;
-  }
-
-  .desktop-img {
-    display: none;
-  }
-
-}
