@@ -120,3 +120,18 @@ window.onload = function () {
     });
      
 };
+
+const items = document.querySelectorAll('.service-items');
+
+items.forEach(item => {
+  const btn = item.querySelector('.arrow');
+  const content = item.querySelector('.service-content');
+
+  item.addEventListener('click', () => {
+    const isOpen = content.style.display === 'block';
+
+    content.style.display = isOpen ? 'none' : 'block';
+    btn.textContent = isOpen ? '+' : '-';
+    btn.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+  });
+});
