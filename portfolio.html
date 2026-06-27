@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adeshola Faith — Frontend Dev & Developer Advocate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Karla:ital,wght@0,200..800;1,200..800&family=Dancing+Script:wght@400..700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" /> 
+    <link rel="icon" type="image/png" href="img/profile-logo.png">
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    
+    <!-- HEADER -->
+    <header class="header">
+      <a href="portfolio.html" style="text-decoration: none;"><div class="nav-logo">Adeshola Faith</div></a>
+      <nav class="nav">
+        <ul class="nav-links"  id="navLinks">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Work</a></li>
+          <!-- <li><a href="#blog">Writing</a></li> -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"></button>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">  
+      <div class="hero-intro sr">
+        <h1 class="intro-h1">Hi! I'm Adeshola Faith</h1>
+        <p>
+          The first time I wrote code that actually worked, I didn’t fully
+          understand everything behind it, I just knew I had made something on my
+          screen change.
+        </p>
+        <p>
+          That little moment turned into curiosity and
+          that curiosity turned into frontend development, where I’ve been
+          building websites that are not just functional, but
+          meaningful to the people using them.
+        </p>
+        <p>
+          A major part of what I do also involves breaking down ideas, sharing 
+          resources and making technical concepts feel more approachable and 
+          less overwhelming for developers.
+        </p>
+      </div>
+     
+    </div>
+
+    <!-- ABOUT -->
+      <div class="about-section" id="about">
+        <div class="about-photo-wrap sr">
+          <div class="about-image-placeholder">
+            <img src="img/ADESHOLA HEADSHOT.png" alt="Photo of Adeshola Faith" class="about-photo"/>          
+          </div>
+          <div class="photo-caption">
+            WEB DEVELOPER || DEVELOPER ADVOCATE
+          </div>
+        </div>
+        <div>
+          <div class="about-label sr">About me</div>
+          <h2 class="about-big-text sr">
+            I'm a frontend developer <em>and</em> developer advocate.
+          </h2>
+          <div class="about-body sr sr-d1">
+            <p>
+              I build <strong>user-friendly web applications</strong> and make 
+              <strong>technology accessible and easier to understand for developers.</strong>
+              I believe that the best software is built when developers have access 
+              to clear, concise information and a <strong>supportive community</strong>.   
+            </p>
+            <p>
+               Along the way, I've discovered that I enjoy more than just writing code.
+               I also enjoy <strong>sharing knowledge, exploring new tools</strong>, and helping other 
+               developers navigate their learning journey. 
+            </p>   
+            <p>
+               Whether through <strong>content, community initiatives</strong> or conversations with 
+               fellow developers, I'm particularly interested in making technical concepts more approachable and 
+               creating spaces where people can learn and grow together.
+            </p>
+            <p>
+              I'm now making a deliberate move into <strong>Developer Relations</strong>, looking for a team
+              where I can use both sides of my brain, the one that writes clean
+              codes and the one that <strong>connects products with the developers they're built for.</strong>
+            </p>
+          </div>
+          <!-- <div class="about-facts sr sr-d2">
+            <div class="fact">
+              <div class="fact-num">3+</div>
+              <div class="fact-label">Years in frontend</div>
+            </div>
+            <div class="fact">
+              <div class="fact-num">10+</div>
+              <div class="fact-label">Projects shipped</div>
+            </div>
+            <div class="fact">
+              <div class="fact-num">10+</div>
+              <div class="fact-label">Articles published</div>
+            </div>
+            <div class="fact">
+              <div class="fact-num">1K+</div>
+              <div class="fact-label">Community members</div>
+            </div>
+          </div>   -->
+        </div>
+      </div>
+
+      <!-- SCROLL BAND -->
+      <div class="scroll-band">
+          <span>Available for DevRel &amp; Frontend roles</span>
+          <div class="marquee-track">
+            <div class="marquee-inner" id="marquee">
+              <span class="marquee-item"
+                ><strong>Web Development</strong><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>React</strong><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Technical Content Creation</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Technical Writing</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Community Building</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Developer Education</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Git & GitHub</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Website Design</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>React</strong><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Technical Content Creation</strong><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Mentoring</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Technical Writing</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Community Building</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Developer Education</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Git & GitHub</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+              <span class="marquee-item"
+                ><strong>Web Development</strong
+                ><span class="marquee-sep">✦</span></span
+              >
+            </div>
+          </div>
+      </div> 
+      
+      <!-- SKILLS -->
+      <section class="skills-section" id="skills">
+        <div class="section-header sr">
+          <div>
+            <div class="section-label" style="--n: &quot;02&quot;">
+              Stack & skills
+            </div>
+            <h2 class="section-title-big">What I<br />work with</h2>
+          </div>
+        </div>
+        <div class="stack-wrap">
+          <div class="skill-line"></div>
+          <div class="core" id="core">
+
+            <div class="layer" data-layer="0" style="--depth:140px">
+              <div class="layer-marker"></div>
+              <div class="layer-row">
+                <div class="layer-name-group">
+                  <img src="img/icons8-source-code-50.png" alt="Code icon" class="layer-icon" />
+                  <span class="layer-name">Web Development</span>
+                </div>
+                <div class="layer-meta">
+                  <span class="layer-count">08</span>
+                </div>
+              </div>
+              <div class="layer-samples">
+                <div class="layer-samples-inner">
+                  <div class="sample-grid">
+                    <div class="sample">HTML &amp; CSS</div>
+                    <div class="sample">JavaScript</div>
+                    <div class="sample">React</div>
+                    <div class="sample">Tailwind CSS</div>
+                    <div class="sample">Bootstrap</div>
+                    <div class="sample">Vercel</div>
+                    <div class="sample">Netlify</div>
+                    <div class="sample">Git &amp; GitHub</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="layer" data-layer="1" style="--depth:110px">
+              <div class="layer-depth"></div>
+              <div class="layer-marker"></div>
+              <div class="layer-row">
+                <div class="layer-name-group">
+                  <img src="img/icons8-code-blocks-50.png" alt="Design icon" class="layer-icon" />
+                  <span class="layer-name">Web Design</span>
+                </div>
+                <div class="layer-meta">
+                  <span class="layer-count">05</span>
+                </div>
+              </div>
+              <div class="layer-samples">
+                <div class="layer-samples-inner">
+                  <div class="sample-grid">
+                    <div class="sample">Responsive Design</div>
+                    <div class="sample">User Experience</div>
+                    <div class="sample">User Interface</div>
+                    <div class="sample">Micro-interactions</div>
+                    <div class="sample">Design Systems</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="layer" data-layer="2" style="--depth:0px">
+              <div class="layer-depth"></div>
+              <div class="layer-marker"></div>
+              <div class="layer-row">
+                <div class="layer-name-group">
+                  <img src="img/icons8-community-32.png" alt="Community icon" class="layer-icon" />
+                  <span class="layer-name">Developer Relations</span>
+                </div>
+                <div class="layer-meta">
+                  <span class="layer-count">07</span>
+                </div>
+              </div>
+              <div class="layer-samples">
+                <div class="layer-samples-inner">
+                  <div class="sample-grid">
+                    <div class="sample">Technical Content</div>
+                    <div class="sample">Technical Writing</div>
+                    <div class="sample">Documentation</div>
+                    <div class="sample">Developer Advocacy</div>
+                    <div class="sample">Developer Education</div>
+                    <div class="sample">Community Building</div>
+                    <div class="sample">Mentorship</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>       
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects-section" id="projects">
+        <div class="section-header sr">
+          <div>
+            <div class="section-label">Selected work</div>
+            <h2 class="section-title-big">Projects</h2>
+          </div>
+          <div class="filter-row">
+            <button class="filt on" data-f="all">All</button>
+            <button class="filt" data-f="fe">Frontend</button>
+            <button class="filt" data-f="os">Open Source</button>
+            <button class="filt" data-f="ux">UI/UX</button>
+          </div>
+        </div>
+        <div class="proj-list">
+          <div class="proj-row" data-cat="ux fe">
+            <div>
+              <div class="proj-num">01</div>
+              <div class="proj-name">Nairobi Oasis Spa</div>
+              <div class="proj-desc">
+                Developed a responsive spa and wellness website with dynamic therapist profile pages, reusable JavaScript components, smooth page transitions and interactive UI elements. Focused on performance, maintainable code and an intuitive user experience across devices.
+              </div>
+            </div>
+            <div class="proj-stack">
+              <span class="proj-tag">HTML</span
+              ><span class="proj-tag">CSS</span
+              ><span class="proj-tag">JavaScript</span>
+            </div>
+            <div><span class="proj-cat fe">Frontend development</span></div>
+            <div class="proj-link">
+              <a href="https://nairobi-oasis-three.vercel.app/" style="text-decoration: none;" target="_blank"><span class="proj-arrow">↗</span></a>
+              <a href="https://github.com/adesholafaith/nairobi-oasis" target="_blank"><img src="img/icons8-github-30.png" alt=""></a>
+            </div>
+          </div>
+          <div class="proj-row sr" data-cat="fe ux">
+            <div>
+              <div class="proj-num">02</div>
+              <div class="proj-name">Roemai</div>
+              <div class="proj-desc">
+                A modern homepage concept for a robotics and embedded systems company, designed to communicate technical expertise and innovation. The project emphasizes structured content presentation and a professional technology-focused aesthetic.
+              </div>
+            </div>
+            <div class="proj-stack">
+              <span class="proj-tag">HTML</span
+              ><span class="proj-tag">CSS</span
+              ><span class="proj-tag">JavaScript</span>
+            </div>
+            <div><span class="proj-cat fe">Frontend Development</span></div>
+            <div class="proj-link">
+              <a href="https://adesholafaith.github.io/Roemai-Homepage/" style="text-decoration: none;" target="_blank"><span class="proj-arrow">↗</span></a>  
+              <a href="https://github.com/adesholafaith/Roemai-Homepage" target="_blank"><img src="img/icons8-github-30.png" alt=""></a>
+            </div>
+          </div>
+          <div class="proj-row sr" data-cat="ux fe">
+            <div>
+              <div class="proj-num">03</div>
+              <div class="proj-name">Cozy Homes & Interior</div>
+              <div class="proj-desc">
+                An e-commerce website for an interior decor brand featuring product showcases, category browsing, and a streamlined shopping experience. Designed with a focus on visual appeal, intuitive navigation, and conversion-oriented user flows..
+              </div>
+            </div>
+            <div class="proj-stack">
+              <span class="proj-tag">HTML</span
+              ><span class="proj-tag">CSS</span
+              ><span class="proj-tag">JavaScript</span>
+            </div>
+            <div><span class="proj-cat ux">E-commerce</span></div>
+            <div class="proj-link">
+              <a href="https://adesholafaith.github.io/Interior-decor-ecommerce-website/" style="text-decoration: none;" target="_blank"><span class="proj-arrow">↗</span></a>  
+              <a href="https://github.com/adesholafaith/Interior-decor-ecommerce-website" target="_blank"><img src="img/icons8-github-30.png" alt=""></a>
+            </div>
+          </div>
+          <div class="proj-row sr sr-d2" data-cat="fe ux">
+            <div>
+              <div class="proj-num">04</div>
+              <div class="proj-name">Olamilekan Portfolio</div>
+              <div class="proj-desc">
+                A professional portfolio website built to showcase projects, experience, and personal achievements. The design prioritizes readability, user engagement, and effective storytelling while maintaining a clean and modern interface.
+              </div>
+            </div>
+            <div class="proj-stack">
+              <span class="proj-tag">HTML</span
+              ><span class="proj-tag">CSS</span
+              ><span class="proj-tag">JavaScript</span>
+            </div>
+            <div><span class="proj-cat os">Portfolio Design</span></div>
+            <div class="proj-link">
+              <a href="https://adesholafaith.github.io/Olalekan-Portfolio/" style="text-decoration: none;" target="_blank"><span class="proj-arrow">↗</span></a>  
+              <a href="https://github.com/adesholafaith/Olalekan-Portfolio" target="_blank"><img src="img/icons8-github-30.png" alt=""></a>
+            </div>
+          </div>
+          <div class="proj-row sr sr-d1" data-cat="fe">
+            <div>
+              <div class="proj-num">05</div>
+              <div class="proj-name">Easybank</div>
+              <div class="proj-desc">
+                A responsive banking landing page designed to showcase financial services through a clean layout, clear call-to-actions, and an intuitive user experience. Built with a focus on accessibility, visual hierarchy, and seamless responsiveness across devices.
+              </div>
+            </div>
+            <div class="proj-stack">
+              <span class="proj-tag">HTML</span
+              ><span class="proj-tag">CSS</span
+              ><span class="proj-tag">JavaScript</span>
+            </div>
+            <div><span class="proj-cat fs">Corporate Website</span></div>
+            <div class="proj-link">
+              <a href="https://adesholafaith.github.io/Easybank-Landing-Page/" style="text-decoration: none;" target="_blank"><span class="proj-arrow">↗</span></a>  
+              <a href="https://github.com/adesholafaith/Easybank-Landing-Page" target="_blank"><img src="img/icons8-github-30.png" alt=""></a>
+            </div>
+          </div>
+          <div class="proj-row sr sr-d1" data-cat="">
+            <div>
+              <div class="proj-num">06</div>
+              <div class="proj-name">Creative Coders Hub</div>
+              <div class="proj-desc">
+                Built and led a developer community from 0 to a thousand, creating a safe space for developers to learn, share, and grow together. Organized weekly challenges, guest AMAs, and structured mentorship programs that significantly reduced new member dropout rates and fostered a supportive learning environment.
+              </div>
+            </div>
+            <div class="proj-stack">
+              <span class="proj-tag">Community Management</span
+              ><span class="proj-tag">Developer Advocacy</span
+              ><span class="proj-tag">Content Creation</span>
+            </div>
+            <div><span class="proj-cat fs">Community</span></div>
+            <a href="https://chat.whatsapp.com/FgUlVOB3DGq62JuCw6nzj8?s=hd&p=i&mlu=1" target="_blank" style="text-decoration: none;"><div class="proj-arrow">↗</div></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIMELINE -->
+      <section class="timeline-section" id="experience">
+        <div class="timeline-sticky sr">
+          <div class="section-label">Experience</div>
+          <h2
+            class="section-title-big"
+            style="font-size: clamp(2.5rem, 5vw, 4rem)"
+          >
+            My<br />journey
+          </h2>
+        </div>
+        <div class="timeline-list">
+          <div class="tl-item sr">
+            <div class="tl-year">2023 –<br class="mobile-break">Present</div>
+            <div>
+              <div class="tl-role">Freelance Frontend Developer</div>
+              <div class="tl-company">Independent · Remote</div>
+              <p class="tl-desc">
+                Design and develop responsive, user-focused web applications 
+                and marketing websites that combine clean code with
+                intuitive user experiences. Collaborate with clients to 
+                transform ideas into modern, accessible, and high-performing
+                digital products using HTML, CSS, JavaScript and React.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item sr sr-d1">
+            <div class="tl-year">2025 –<br class="mobile-break">Present</div>
+            <div>
+              <div class="tl-role">Web Designer</div>
+              <div class="tl-company">Independent · Remote</div>
+              <p class="tl-desc">
+                Design intuitive digital experiences with a focus on usability, 
+                accessibility, and visual storytelling. Work closely
+                with clients to create interfaces that align business goals 
+                with user needs before translating designs into functional
+                web experiences.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item sr sr-d2">
+            <div class="tl-year">2026 –<br class="mobile-break">Present</div>
+            <div>
+              <div class="tl-role">Developer Advocate & Community Lead</div>
+              <div class="tl-company">Creative Coders Hub · 1K+ Members</div>
+              <p class="tl-desc">
+                Founded and grew a developer community dedicated to helping aspiring 
+                developers learn, collaborate, and build confidence through technical 
+                content, mentorship and community-driven initiatives.
+              </p>
+            </div>
+          </div>
+          <div class="tl-item sr sr-d1">
+            <div class="tl-year">Present</div>
+            <div>
+              <div class="tl-future">
+                <div class="tl-future-label">Target role</div>
+                <div class="tl-role">Frontend Developer • DevRel</div>
+                <div class="tl-company">
+                  Frontend Developer / Developer Experience / Developer Advocacy
+                </div>
+                <p class="tl-desc">
+                  Looking to join a product team where I can build accessible
+                   web experiences and empower developers through code, content and community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <!-- <section class="testimonials-section" id="testimonials">
+        <div class="section-header sr">
+          <div>
+            <div class="section-label">Social proof</div>
+            <h2 class="section-title-big">Kind words</h2>
+          </div>
+        </div>
+        <div class="testimonials-grid">
+          <div class="t-card sr">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              "Adeshola has a rare ability to make complex frontend concepts feel
+              approachable. Their documentation PRs always pushed our team to
+              write clearer, more developer-friendly content."
+            </p>
+            <div class="t-author">
+              <div class="t-avatar">SK</div>
+              <div>
+                <div class="t-name">Sarah K.</div>
+                <div class="t-role">Lead Engineer · TechStart Inc.</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card sr sr-d1">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              "Delivered a flawless Next.js dashboard ahead of schedule. The
+              written handover notes were better than most internal docs I've seen
+              at much larger companies."
+            </p>
+            <div class="t-author">
+              <div class="t-avatar">MD</div>
+              <div>
+                <div class="t-name">Michael D.</div>
+                <div class="t-role">Founder · BuildFlow SaaS</div>
+              </div>
+            </div>
+          </div>
+          <div class="t-card sr sr-d2">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">
+              "Adeshola's talk was the highlight of our conference. They connected
+              deeply with the audience, answered hard questions honestly, and left
+              everyone genuinely inspired. Perfect DevRel energy."
+            </p>
+            <div class="t-author">
+              <div class="t-avatar">AT</div>
+              <div>
+                <div class="t-name">Aisha T.</div>
+                <div class="t-role">Organizer · JSConf West Africa</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- BLOG -->
+      <!-- <section class="blog-section" id="blog">
+        <div class="section-header sr" style="margin-bottom: 2.5rem">
+          <div>
+            <div class="section-label">Writing</div>
+            <h2 class="section-title-big">Latest articles</h2>
+          </div>
+          <a
+            href="#"
+            style="
+              font-size: 0.8rem;
+              font-weight: 800;
+              text-transform: uppercase;
+              letter-spacing: 0.08em;
+              color: rgba(245, 240, 232, 0.5);
+              transition: color 0.15s;
+            "
+            onmouseover="this.style.color = '#f5f0e8'"
+            onmouseout="this.style.color = 'rgba(245,240,232,.5)'"
+            >All articles →</a
+          >
+        </div>
+        <div class="blog-grid">
+          <div class="art-card sr">
+            <div class="art-header" style="background: rgba(26, 79, 255, 0.08)">
+              ⚛️
+            </div>
+            <div class="art-body">
+              <div class="art-meta">
+                <span class="art-cat">React</span
+                ><span class="art-date">May 2025</span
+                ><span class="art-date">· 8 min</span>
+              </div>
+              <h3 class="art-title">
+                React Server Components: The Mental Model You Actually Need
+              </h3>
+              <p class="art-read">Read article →</p>
+            </div>
+          </div>
+          <div class="art-card sr sr-d1">
+            <div class="art-header" style="background: rgba(255, 100, 0, 0.06)">
+              🏗️
+            </div>
+            <div class="art-body">
+              <div class="art-meta">
+                <span class="art-cat">Architecture</span
+                ><span class="art-date">Apr 2025</span
+                ><span class="art-date">· 12 min</span>
+              </div>
+              <h3 class="art-title">
+                How I Structured a Large-Scale Next.js App Without Going Insane
+              </h3>
+              <p class="art-read">Read article →</p>
+            </div>
+          </div>
+          <div class="art-card sr sr-d2">
+            <div class="art-header" style="background: rgba(0, 200, 83, 0.06)">
+              ♿
+            </div>
+            <div class="art-body">
+              <div class="art-meta">
+                <span class="art-cat">Accessibility</span
+                ><span class="art-date">Mar 2025</span
+                ><span class="art-date">· 10 min</span>
+              </div>
+              <h3 class="art-title">
+                Building Accessible React Components: A Practical Checklist
+              </h3>
+              <p class="art-read">Read article →</p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- COMMUNITY -->
+      <!-- <section class="community-section" id="community">
+        <div class="section-header sr">
+          <div>
+            <div class="section-label">Open source & community</div>
+            <h2 class="section-title-big">Building<br />in public</h2>
+          </div>
+        </div>
+        <div class="community-grid">
+          <div class="contrib-box sr">
+            <div class="contrib-title">GitHub contributions — 2024</div>
+            <div class="contrib-squares" id="sqGrid"></div>
+            <div class="contrib-stats">
+              <div>
+                <div class="c-stat-num">847</div>
+                <div class="c-stat-label">Contributions</div>
+              </div>
+              <div>
+                <div class="c-stat-num">14</div>
+                <div class="c-stat-label">Repos</div>
+              </div>
+              <div>
+                <div class="c-stat-num">1.2K</div>
+                <div class="c-stat-label">Stars earned</div>
+              </div>
+            </div>
+          </div>
+          <div class="activity-feed sr sr-d1">
+            <div class="act-item">
+              <div class="act-icon">⭐</div>
+              <div class="act-info">
+                <div class="act-title">react-devtools-kit hit 1,200 stars</div>
+                <div class="act-sub">Open source component library</div>
+              </div>
+              <div class="act-time">3d ago</div>
+            </div>
+            <div class="act-item">
+              <div class="act-icon">🎤</div>
+              <div class="act-info">
+                <div class="act-title">Spoke at DevFest Lagos 2024</div>
+                <div class="act-sub">"TypeScript Patterns That Scale"</div>
+              </div>
+              <div class="act-time">2w ago</div>
+            </div>
+            <div class="act-item">
+              <div class="act-icon">✍️</div>
+              <div class="act-info">
+                <div class="act-title">Article hit 30K reads on Dev.to</div>
+                <div class="act-sub">
+                  "React Server Components" · most read ever
+                </div>
+              </div>
+              <div class="act-time">1mo ago</div>
+            </div>
+            <div class="act-item">
+              <div class="act-icon">👥</div>
+              <div class="act-info">
+                <div class="act-title">DevCircle reached 5,000 members</div>
+                <div class="act-sub">Developer Discord community milestone</div>
+              </div>
+              <div class="act-time">6w ago</div>
+            </div>
+            <div class="act-item">
+              <div class="act-icon">🔀</div>
+              <div class="act-info">
+                <div class="act-title">PR merged into Next.js docs</div>
+                <div class="act-sub">
+                  Improved App Router getting started guide
+                </div>
+              </div>
+              <div class="act-time">2mo ago</div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- CONTACT -->
+      <section class="contact-section" id="contact">
+        <h2 class="contact-hero-text sr">
+          Let's build<br />something together.
+        </h2>
+        <div class="contact-grid">
+          <div class="contact-form-wrap sr sr-d1">
+            <div>
+              <p style=" font-size: 1rem; line-height: 1.75; color: var(--muted); margin-bottom: 2rem; max-width: 500px;">
+                I'm open to DevRel roles, frontend contracts, and interesting
+                collaborations. If you're building for developers, let's talk.
+              </p>
+
+              <div class="contact-links">
+                <a class="email-link" href="mailto:sholaadearomolaran@gmail.com" style="text-decoration: none;">
+                  <img src="img/icons8-gmail-logo-30.png" alt=""><span class="c-link-label">sholaadearomolaran@gmail.com</span>
+                </a>
+                <a class="c-link" href="https://www.linkedin.com/in/adeshola-aromolaran/" target="_blank">
+                  <img src="img/icons8-linkedin-30.png" alt="">
+                </a>
+                <a class="c-link" href="https://github.com/adesholafaith" target="_blank">
+                  <img src="img/icons8-github-30.png" alt="">
+                </a>
+                <a class="c-link" href="http://x.com/_adesholafaith?s=21" target="_blank">
+                  <img src="img/icons8-x-30.png" alt="">
+                </a>
+                <a class="c-link" href="https://wa.me/2348135679799">
+                  <img src="img/icons8-whatsapp-30.png" alt="">
+                </a>
+              </div>
+          </div>
+        </div>
+        
+          <form class="contact-form" id="contact-form">
+            <div class="form-title">Send a message</div>
+            <div class="f-row">
+              <div class="f-group">
+                <label class="f-label">First name
+                <input class="f-input"  type="text" name="first_name" placeholder="Your Name" required>
+                </label>
+              </div>
+              <div class="f-group">
+                <label class="f-label">Last name
+                <input class="f-input" type="text" name="last_name" placeholder="Your Name" required>
+                </label>
+              </div>
+            </div>
+            <div class="f-group">
+              <label class="f-label">Email
+              <input class="f-input" type="email" name="reply_to" placeholder="Your Email" required>
+              </label>
+            </div>
+            <div class="f-group">
+              <label class="f-label">Subject
+              <input class="f-input" type="text" name="subject" placeholder="Subject" required>
+              </label>
+            </div>
+            <div class="f-group">
+              <label class="f-label">Message
+              <textarea class="f-input" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button class="f-submit" id="sendBtn" type="submit">
+              Send Message →
+            </button>
+          </form>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-left">Adeshola Faith</div>
+        <div class="footer-mid">
+          <a href="#about">About</a>
+          <a href="#projects">Work</a>
+          <!-- <a href="#blog">Writing</a> -->
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-right">
+          © 2026 — Adeshola Faith, Lagos 🇳🇬
+        </div>
+      </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      emailjs.init({
+        publicKey: "rxrXGaa54jshSE5q1",
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
